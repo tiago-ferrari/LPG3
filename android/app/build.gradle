@@ -1,0 +1,46 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    // O plugin do Flutter Gradle deve ser aplicado após os plugins do Android e Kotlin
+    id "dev.flutter.flutter-gradle-plugin"
+    id "com.google.gms.google-services" // Adicione o plugin do Google Services
+}
+
+android {
+    namespace = "com.example.cardapio5"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId = "com.example.cardapio5"
+        minSdk = 23 // Atualize aqui para 23
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    implementation(platform("com.google.firebase:firebase-bom:33.4.0"))
+    implementation("com.google.firebase:firebase-analytics") // Exemplo de uma dependência do Firebase
+    // Adicione outras dependências do Firebase que você deseja usar
+}
+
+flutter {
+    source = "../.."
+}
