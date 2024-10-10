@@ -20,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void _loadHomeScreen() {
     // Navega para a tela principal do aplicativo
     Navigator.of(context).pushReplacement(
-      MaterialPageRoute(builder: (context) => const HomeScreen()), // Atualize aqui
+      MaterialPageRoute(builder: (context) => const HomeScreen()), // Nova rota
     );
   }
 
