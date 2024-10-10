@@ -1,16 +1,17 @@
-# cardapio5
+Descrição:
+Cardápio é um app simples para gerenciamento de cardapios e exibição de cardápios
 
-tentativa 5, usando flutter
+Tecnologias Utilizadas:
+Foi desenvolvido utilizando Android Studio, Flutter e Firebase
 
-## Getting Started
+Ainda há coisas a serem ajustadas
 
-This project is a starting point for a Flutter application.
+Como Utilizar:
 
-A few resources to get you started if this is your first Flutter project:
+Para cadastrar algum cardápio é necessário fazer um cadastro em Home -> Login -> Cadastre-se
+Feito o cadastro e login, deverá preencher o formulário do Menu (Data, Salada, Acompanhamento, Guarnição, Prato Principal, Vegetariano)
+sendo que o campo Data deve ser colocado no formato DD/MM, essa versão só aborda dias de segunda a sexta do mês de outubro.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Para Ativar/Desativar o modo Escuro
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Home -> Canto Superior Direito -> Modo Escuro/Modo Claro
